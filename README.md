@@ -21,8 +21,9 @@ This repository provides a utility to generate external secrets from Kubernetes 
     ./generate-secrets.sh && rm generate-secrets.sh
     ```
 
-3. Run go program
-    Edit constant values in the main.go file with apropriate values.
+3. Prepare and Run
+
+    Edit constant values in the main.go file with appropriate values.
     ```golang
     const (
 	    pathToJsonDir       = "./utils"
@@ -33,12 +34,12 @@ This repository provides a utility to generate external secrets from Kubernetes 
 	    VaultPath           = "secret/test" // Set the default Vault path
     )
     ```
-    Run the program
+    Run the program:
     ```bash
     go run ./main.go
     ```
 
-4. Output will be saved in the specified format.
+5. The output will be saved in the specified format.
 
 ### Requirements
 
